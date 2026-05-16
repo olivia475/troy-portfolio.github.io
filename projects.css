@@ -1,0 +1,149 @@
+/* ── Projects page overrides ── */
+.projects-page {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-page #header {
+  padding: 12px 24px;
+}
+
+/* ── Scrollable body ── */
+#projects-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 40px 48px 48px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+#projects-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+#projects-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#projects-body::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+/* ── Page heading ── */
+#projects-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.projects-tag {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-g);
+}
+
+#projects-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+/* ── Grid ── */
+#projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ── Project card ── */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.project-image-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  transition: border-color 0.15s;
+}
+
+.project-card:hover .project-image-wrap {
+  border-color: var(--text-muted);
+}
+
+.project-placeholder {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: var(--pad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 28px;
+  color: var(--text-muted);
+  transition: background 0.15s, color 0.15s;
+}
+
+.upload-label:hover {
+  background: var(--pad-hover);
+  color: var(--text);
+}
+
+.upload-label input[type="file"] {
+  display: none;
+}
+
+.project-img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ── Card info ── */
+.project-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.project-title {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.project-year {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}

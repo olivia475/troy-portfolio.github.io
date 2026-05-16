@@ -3,69 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>troys studio</title>
+  <title>Troy Blackmore</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projects.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div id="studio">
+  <div id="studio" class="projects-page">
+
     <div id="header">
       <div id="logo">
         <div class="rec-dot"></div>
-        troys studio
+        <a href="index.html" class="logo-link">troy blackmore</a>
       </div>
-      <div class="theme-toggle">
-        <span>dark</span>
-        <div class="toggle-track" id="themeToggle">
-          <div class="toggle-thumb"></div>
+      <div class="header-right">
+        <nav class="nav">
+          <!-- Secret drum kit trigger — looks like a nav link -->
+          <a href="drumkit.html" class="nav-link" id="drumkit-link">studio</a>
+          <a href="about.html" class="nav-link">about</a>
+        </nav>
+        <div class="theme-toggle">
+          <span>dark</span>
+          <div class="toggle-track" id="themeToggle">
+            <div class="toggle-thumb"></div>
+          </div>
+          <span>light</span>
         </div>
-        <span>light</span>
       </div>
     </div>
 
-    <div id="controls">
-      <div class="slider-section">
-        <div class="slider-label">volume</div>
-        <div class="slider-track-wrap" id="trackVol">
-          <div class="slider-track-bg"></div>
-          <div class="slider-track-fill" id="fillVol"></div>
-          <div class="slider-pin" id="pinVol"></div>
-        </div>
-        <div class="slider-val" id="valVol">75</div>
-      </div>
-      <div class="slider-section">
-        <div class="slider-label">reverb</div>
-        <div class="slider-track-wrap" id="trackRev">
-          <div class="slider-track-bg"></div>
-          <div class="slider-track-fill" id="fillRev"></div>
-          <div class="slider-pin" id="pinRev"></div>
-        </div>
-        <div class="slider-val" id="valRev">20</div>
-      </div>
-      <div class="slider-section">
-        <div class="slider-label">pitch</div>
-        <div class="slider-track-wrap" id="trackPitch">
-          <div class="slider-track-bg"></div>
-          <div class="slider-track-fill" id="fillPitch"></div>
-          <div class="slider-pin" id="pinPitch"></div>
-        </div>
-        <div class="slider-val" id="valPitch">50</div>
-      </div>
-      <div id="vu-wrap">
-        <div class="vu-bar"><div class="vu-fill" id="vu0"></div></div>
-        <div class="vu-bar"><div class="vu-fill" id="vu1"></div></div>
-        <div class="vu-bar"><div class="vu-fill" id="vu2"></div></div>
-        <div class="vu-bar"><div class="vu-fill" id="vu3"></div></div>
-        <div class="vu-bar"><div class="vu-fill" id="vu4"></div></div>
-        <div class="vu-bar"><div class="vu-fill" id="vu5"></div></div>
-        <div class="vu-bar"><div class="vu-fill" id="vu6"></div></div>
-      </div>
-    </div>
+    <div id="projects-body">
 
-    <div id="grid-area">
-      <div class="pad-grid" id="padGrid"></div>
+      <div id="projects-header">
+        <h1 id="projects-title">Troy Blackmore</h1>
+        <span class="projects-tag">graphic design &amp; visual communication</span>
+      </div>
+
+      <div id="projects-grid">
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2025</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2025</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2024</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2024</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2023</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2023</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2022</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2022</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-wrap">
+            <div class="project-placeholder">
+              <label class="upload-label">
+                <span>+</span>
+                <input type="file" accept="image/*" class="img-upload" />
+              </label>
+              <img class="project-img" src="" alt="" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-title">Project Title</div>
+            <div class="project-year">2021</div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div id="footer">
@@ -75,10 +197,33 @@
         <div class="fdot" style="background:var(--accent-g)"></div>
         <div class="fdot" style="background:var(--accent-y)"></div>
       </div>
-      <div class="footer-credit">made by olivia & claude [2026]</div>
+      <div class="footer-credit">made by olivia [2026]</div>
     </div>
+
   </div>
 
-  <script src="main.js"></script>
+  <script>
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.getElementById('studio').classList.toggle('light');
+      document.getElementById('themeToggle').classList.toggle('on');
+    });
+
+    document.querySelectorAll('.img-upload').forEach(input => {
+      input.addEventListener('change', e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const card = input.closest('.project-card');
+        const img = card.querySelector('.project-img');
+        const label = card.querySelector('.upload-label');
+        const reader = new FileReader();
+        reader.onload = ev => {
+          img.src = ev.target.result;
+          img.style.display = 'block';
+          label.style.display = 'none';
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+  </script>
 </body>
 </html>

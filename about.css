@@ -8,42 +8,6 @@ html, body {
   padding: 12px 24px;
 }
 
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.logo-link {
-  color: var(--text);
-  text-decoration: none;
-}
-
-/* ── Nav ── */
-.nav {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-link {
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.nav-link:hover {
-  color: var(--text);
-}
-
-.nav-link.active {
-  color: var(--text);
-  border-bottom: 1px solid var(--accent-g);
-  padding-bottom: 1px;
-}
-
 /* ── Main layout ── */
 #about-body {
   flex: 1;
@@ -96,12 +60,12 @@ html, body {
   font-size: 36px;
   color: var(--text-muted);
   line-height: 1;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .upload-hint {
   font-size: 12px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   letter-spacing: 0.08em;
   color: var(--text-muted);
 }
@@ -130,7 +94,7 @@ html, body {
 }
 
 #about-tag {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -138,7 +102,7 @@ html, body {
 }
 
 #about-name {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 36px;
   font-weight: 700;
   color: var(--text);
@@ -167,7 +131,7 @@ html, body {
 }
 
 #about-contact {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 13px;
   letter-spacing: 0.06em;
   color: var(--text-muted);

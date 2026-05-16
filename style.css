@@ -68,6 +68,43 @@ html, body {
   user-select: none;
 }
 
+/* ── Shared nav / header-right ── */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.logo-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  margin-right: 16px;
+}
+
+.nav-link {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link.active {
+  color: var(--text);
+  border-bottom: 1px solid var(--accent-g);
+  padding-bottom: 2px;
+}
+
 /* ── Header ── */
 #header {
   display: flex;
@@ -83,7 +120,7 @@ html, body {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 18px;
   letter-spacing: 0.06em;
   color: var(--text);
@@ -109,7 +146,7 @@ html, body {
   gap: 8px;
   font-size: 15px;
   color: var(--text-muted);
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .toggle-track {
@@ -170,7 +207,7 @@ html, body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   min-width: 36px;
 }
 
@@ -223,7 +260,7 @@ html, body {
 
 .slider-val {
   font-size: 14px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   color: var(--text-muted);
   min-width: 22px;
   text-align: right;
@@ -313,7 +350,7 @@ html, body {
 
 .pad-label {
   font-size: 15px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   color: var(--text-muted);
   letter-spacing: 0.04em;
   text-align: center;
@@ -336,7 +373,7 @@ html, body {
 
 .footer-email {
   font-size: 14px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   color: var(--text-muted);
 }
 
@@ -354,6 +391,6 @@ html, body {
 
 .footer-credit {
   font-size: 14px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   color: var(--text-muted);
 }

@@ -32,14 +32,14 @@ const padDefs = [
   { label: '',                                   type: 'fx2'    },
   { label: '',                                   type: 'fx3'    },
   { label: '',                                   type: 'stab'   },
-  { label: 'work',          accent: 'accent-b', type: 'lead'   },
+  { label: 'work',          accent: 'accent-b', type: 'lead' },
   { label: '',                                   type: 'arp1'   },
   { label: '',                                   type: 'arp2'   },
   { label: '',                                   type: 'arp3'   },
   { label: '',                                   type: 'arp4'   },
   { label: '',                                   type: 'arp5'   },
   { label: '',                                   type: 'pad1'   },
-  { label: 'about',         accent: 'accent-r', type: 'pad2'   },
+  { label: 'about',         accent: 'accent-r', type: 'pad2' },
   { label: '',                                   type: 'pad3'   },
 ];
 
@@ -58,10 +58,18 @@ function buildGrid() {
       pad.appendChild(lbl);
     }
 
-    pad.addEventListener('mousedown', () => triggerPad(pad, def.type));
+    pad.addEventListener('mousedown', () => {
+      triggerPad(pad, def.type);
+      if (def.link) {
+        setTimeout(() => { window.location.href = def.link; }, 160);
+      }
+    });
     pad.addEventListener('touchstart', e => {
       e.preventDefault();
       triggerPad(pad, def.type);
+      if (def.link) {
+        setTimeout(() => { window.location.href = def.link; }, 160);
+      }
     }, { passive: false });
 
     grid.appendChild(pad);
