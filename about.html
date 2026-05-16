@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about — troys studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="studio">
+
+    <div id="header">
+      <div id="logo">
+        <div class="rec-dot"></div>
+        <a href="index.html" class="logo-link">troys studio</a>
+      </div>
+      <div class="header-right">
+        <nav class="nav">
+          <a href="index.html" class="nav-link">home</a>
+          <a href="about.html" class="nav-link active">about</a>
+        </nav>
+        <div class="theme-toggle">
+          <span>dark</span>
+          <div class="toggle-track" id="themeToggle">
+            <div class="toggle-thumb"></div>
+          </div>
+          <span>light</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-body">
+
+      <div id="about-image-col">
+        <div id="image-frame">
+          <label id="image-label" for="imageUpload">
+            <span class="upload-icon">+</span>
+            <span class="upload-hint">click to add photo</span>
+          </label>
+          <input type="file" id="imageUpload" accept="image/*" />
+          <img id="profileImg" src="" alt="Troy Blackmore" />
+        </div>
+      </div>
+
+      <div id="about-text-col">
+        <div id="about-tag">about</div>
+        <h1 id="about-name">Troy Blackmore</h1>
+        <div class="divider"></div>
+        <div id="about-bio">
+          <p>
+            Troy Blackmore is a sound designer, producer, and musician based in London.
+            With over a decade of work spanning experimental electronic music, film scoring,
+            and live performance, his practice sits at the intersection of technology and texture.
+          </p>
+          <p>
+            His studio is a space for collaboration, creation, and exploration — built around
+            the idea that every sound tells a story. Troy's work has been featured in
+            international exhibitions, soundtracks, and releases on independent labels worldwide.
+          </p>
+          <p>
+            He is currently open for commissions and collaborative projects.
+            Get in touch via the address below.
+          </p>
+        </div>
+        <div class="divider"></div>
+        <div id="about-contact">troy@troyblackmore.com</div>
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="footer-email">troy@troyblackmore.com</div>
+      <div class="footer-dots">
+        <div class="fdot" style="background:var(--accent-r)"></div>
+        <div class="fdot" style="background:var(--accent-g)"></div>
+        <div class="fdot" style="background:var(--accent-y)"></div>
+      </div>
+      <div class="footer-credit">made by olivia [2026]</div>
+    </div>
+
+  </div>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      const studio = document.getElementById('studio');
+      studio.classList.toggle('light');
+      toggle.classList.toggle('on');
+    });
+
+    const upload = document.getElementById('imageUpload');
+    const img    = document.getElementById('profileImg');
+    const label  = document.getElementById('image-label');
+
+    upload.addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = ev => {
+        img.src = ev.target.result;
+        img.style.display = 'block';
+        label.style.display = 'none';
+      };
+      reader.readAsDataURL(file);
+    });
+  </script>
+</body>
+</html>

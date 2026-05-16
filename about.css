@@ -1,0 +1,180 @@
+/* ── Overrides for about page ── */
+html, body {
+  overflow: hidden;
+}
+
+/* Make header flex work with right-side nav + toggle */
+#header {
+  padding: 12px 24px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.logo-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* ── Nav ── */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link.active {
+  color: var(--text);
+  border-bottom: 1px solid var(--accent-g);
+  padding-bottom: 1px;
+}
+
+/* ── Main layout ── */
+#about-body {
+  flex: 1;
+  display: flex;
+  gap: 0;
+  overflow: hidden;
+}
+
+/* ── Image column ── */
+#about-image-col {
+  width: 40%;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--bg2);
+}
+
+#image-frame {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  background: var(--bg3);
+  cursor: pointer;
+}
+
+#image-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#image-label:hover {
+  background: var(--pad-hover);
+}
+
+.upload-icon {
+  font-size: 36px;
+  color: var(--text-muted);
+  line-height: 1;
+  font-family: 'Space Mono', monospace;
+}
+
+.upload-hint {
+  font-size: 12px;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+#imageUpload {
+  display: none;
+}
+
+#profileImg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* ── Text column ── */
+#about-text-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 56px;
+  overflow-y: auto;
+  gap: 24px;
+}
+
+#about-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-g);
+}
+
+#about-name {
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  width: 100%;
+}
+
+#about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#about-bio p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+#about-contact {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+
+#about-contact:hover {
+  color: var(--text);
+  cursor: default;
+}

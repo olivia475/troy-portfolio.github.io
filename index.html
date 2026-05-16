@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>troys studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="studio">
+    <div id="header">
+      <div id="logo">
+        <div class="rec-dot"></div>
+        troys studio
+      </div>
+      <div class="theme-toggle">
+        <span>dark</span>
+        <div class="toggle-track" id="themeToggle">
+          <div class="toggle-thumb"></div>
+        </div>
+        <span>light</span>
+      </div>
+    </div>
+
+    <div id="controls">
+      <div class="slider-section">
+        <div class="slider-label">volume</div>
+        <div class="slider-track-wrap" id="trackVol">
+          <div class="slider-track-bg"></div>
+          <div class="slider-track-fill" id="fillVol"></div>
+          <div class="slider-pin" id="pinVol"></div>
+        </div>
+        <div class="slider-val" id="valVol">75</div>
+      </div>
+      <div class="slider-section">
+        <div class="slider-label">reverb</div>
+        <div class="slider-track-wrap" id="trackRev">
+          <div class="slider-track-bg"></div>
+          <div class="slider-track-fill" id="fillRev"></div>
+          <div class="slider-pin" id="pinRev"></div>
+        </div>
+        <div class="slider-val" id="valRev">20</div>
+      </div>
+      <div class="slider-section">
+        <div class="slider-label">pitch</div>
+        <div class="slider-track-wrap" id="trackPitch">
+          <div class="slider-track-bg"></div>
+          <div class="slider-track-fill" id="fillPitch"></div>
+          <div class="slider-pin" id="pinPitch"></div>
+        </div>
+        <div class="slider-val" id="valPitch">50</div>
+      </div>
+      <div id="vu-wrap">
+        <div class="vu-bar"><div class="vu-fill" id="vu0"></div></div>
+        <div class="vu-bar"><div class="vu-fill" id="vu1"></div></div>
+        <div class="vu-bar"><div class="vu-fill" id="vu2"></div></div>
+        <div class="vu-bar"><div class="vu-fill" id="vu3"></div></div>
+        <div class="vu-bar"><div class="vu-fill" id="vu4"></div></div>
+        <div class="vu-bar"><div class="vu-fill" id="vu5"></div></div>
+        <div class="vu-bar"><div class="vu-fill" id="vu6"></div></div>
+      </div>
+    </div>
+
+    <div id="grid-area">
+      <div class="pad-grid" id="padGrid"></div>
+    </div>
+
+    <div id="footer">
+      <div class="footer-email">troy@troyblackmore.com</div>
+      <div class="footer-dots">
+        <div class="fdot" style="background:var(--accent-r)"></div>
+        <div class="fdot" style="background:var(--accent-g)"></div>
+        <div class="fdot" style="background:var(--accent-y)"></div>
+      </div>
+      <div class="footer-credit">made by olivia & claude [2026]</div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
